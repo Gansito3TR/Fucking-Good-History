@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+#titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+}
+
+.texto {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    opacity: 0.2;
+    transition: all 0.5s;
+}
+
+.imagen {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.transform_up{transform: translateY(20%)}
+.transform_down{transform: translateY(-20%)}
+.transform_left {transform: translateX(-20%)}
+.transform_right {transform: translateX(20%)}
+
+.aparece{opacity: 1;
+         transform: 'none';
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes mover {
+    0% {
+        transform: translate(100%);
+    }
+}
+
+#primeras-imagenes {
+    display: flex;
+    width: 80%;
+    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+#aegao{
+    width: 60%;
+}
+#tonayitan{
+    width: 30%;
+}
+
+#dedicatoria {
+    display: flex;
+    width: 80%;
+
+}
+#img-dedicatoria{
+    width: 30%;
+}
+#Hasbulla {
+    width: 90%
+}
